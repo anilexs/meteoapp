@@ -1,5 +1,9 @@
 getWeather("bordeaux");
 // requete http vers l'api pour recuperer la meteo d'une ville
+
+$("#localisation").click((e) => {
+    console.log("1");
+})
 function getWeather(city){
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e624eef1f6febd017baa635a70bd5dc3`)
     .then(response => {

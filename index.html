@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="silica.ico">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <!-- ici afficher le nom de la ville la temperature en degres celcius, le temperature max, la temperature min, l'icone du temps qu'il fais -->
+    <form method="post">
+        <div>
+            <label for="">quelle ville cherche vous</label>
+            <input type="text" id="ville" placeholder="quelle ville ?">
+        </div>
+        <button id="localisation">localisation</button>
+    </form>
     <div class="">
         <h1 id="city"></h1>
         <div>
